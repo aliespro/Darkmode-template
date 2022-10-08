@@ -1,0 +1,168 @@
+body {
+    background: #fbfbfb;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "iransans";
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url(font/Iransanss.ttf);
+}
+
+.circle {
+    height: 251px;
+    border-bottom-right-radius: 287px;
+    border-bottom-left-radius: 287px;
+    z-index: -999;
+    width: 550px;
+    font-weight: 300;
+    background: linear-gradient(45deg, #fc365e, #fd7616);
+}
+
+#phone {
+    height: 570px;
+    width: 300px;
+    background: #fbfbfb;
+    border-radius: 20px;
+    box-shadow: 3px;
+    /* border: 1px solid rgba(232, 232, 232, 0.712); */
+    box-shadow: 6px 6px 12px #7676764f, -6px -6px 12px #7676764f;
+}
+
+
+/* @keyframes example {
+    0% {
+        top: 30px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 60px;
+    }
+} */
+
+.done {
+    border: 50px solid red !important;
+}
+
+.moon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(243deg, #fd7616, #fd4949);
+    /* transition-property: width; */
+    /* transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+}
+
+.transprnet {
+    background: linear-gradient(243deg, #fd7616, #fd4949);
+    left: 19px;
+    top: 3px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    width: 78px;
+    height: 78px;
+}
+
+.switch6 {
+    max-width: 17em;
+    margin: 0 auto;
+}
+
+.switch6-light>span,
+.switch-toggle>span {
+    color: #aea3a3;
+}
+
+.switch6-light span span,
+.switch6-light label,
+.switch-toggle span span,
+.switch-toggle label {
+    color: #2b2b2b;
+}
+
+.switch-toggle a,
+.switch6-light span span {
+    display: none;
+}
+
+.switch6-light {
+    display: block;
+    height: 30px;
+    position: relative;
+    overflow: visible;
+    padding: 4px 0;
+    margin-left: 0px;
+}
+
+.switch6-light * {
+    box-sizing: border-box;
+}
+
+.switch6-light a {
+    display: block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.switch6-light label,
+.switch6-light>span {
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.switch6-light label {
+    font-weight: 700;
+    margin-bottom: px;
+    max-width: 100%;
+}
+
+.switch6-light input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+}
+
+.switch6-light input:checked~a {
+    right: 0%;
+}
+
+.switch6-light>span {
+    position: absolute;
+    left: -100px;
+    width: 100%;
+    margin: 0px;
+    padding-right: 100px;
+    text-align: left;
+}
+
+.switch6-light>span span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.switch6-light>span span:last-child {
+    left: 50%;
+}
+
+.switch6-light a {
+    position: absolute;
+    right: 50%;
+    top: 0px;
+    z-index: 4;
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+}
