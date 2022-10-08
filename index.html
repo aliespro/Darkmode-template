@@ -23,7 +23,7 @@
         </header>
 
         <div id="moon" class=" moon m-4 rounded-full mx-auto mt-32">
-            <div id="sun" class="transprnet rounded-full mt-4">
+            <div id="sun" class="transprnet rounded-full ">
             </div>
         </div>
 
@@ -74,12 +74,32 @@
                 document.getElementById("p-h").style.color = "#14141a ";
                 document.getElementById("p-p").style.color = "#14141a ";
                 document.getElementById("circle").style.background = "linear-gradient(243deg, #fd7616, #fd4949) ";
+                document.getElementById("sun").style.left = "16px";
+                document.getElementById("sun").style.top = "3px";
+
 
                 document.getElementById("moon").style.background = " linear-gradient(243deg, #fd7616, #fd4949)";
                 document.getElementById("sun").style.background = " linear-gradient(243deg, #fd7616, #fd4949)";
 
 
                 document.getElementById("header").style.color = "#222 ";
+                document.getElementById("header").style.opacity = "30%";
+
+                let size = 78;
+                const time = setInterval(fram_moon_sun, 10);
+
+                function fram_moon_sun() {
+                    if (size == 78) {
+                        clearInterval(id);
+                    } else {
+                        size++;
+                        document.getElementById("sun").style.width = size + "px";
+                        document.getElementById("sun").style.height = size + "px";
+
+                    }
+                }
+
+
 
 
             }
@@ -95,6 +115,7 @@
                 document.getElementById("p-p").style.color = "#d6d4d9 ";
 
                 document.getElementById("header").style.color = "#fff ";
+                document.getElementById("sun").style.left = "0px";
 
 
                 document.getElementById("moon").style.background = "linear-gradient(45deg, rgb(129, 110, 253), rgb(133, 178, 253))";
@@ -102,7 +123,37 @@
                 document.getElementById("circle").style.background = "linear-gradient(45deg, #816efd, #85b2fd) ";
             }
 
+            function anmite() {
+                let pos = 40;
+                const id = setInterval(fram, 3);
+
+                function fram() {
+                    if (pos == 100) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        document.getElementById("circle").style.opacity = pos + "%";
+                    }
+                }
+                let size = 50;
+                const time = setInterval(fram_moon_sun, 7);
+
+                function fram_moon_sun() {
+                    if (size == 78) {
+                        clearInterval(id);
+                    } else {
+                        size++;
+                        document.getElementById("sun").style.width = size + "px";
+                        document.getElementById("sun").style.height = size + "px";
+
+                    }
+                }
+
+            }
+
+            anmite();
         }
+
         check();
     </script>
 </body>
