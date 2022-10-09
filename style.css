@@ -22,28 +22,25 @@ body {
     background: linear-gradient(45deg, #fc365e, #fd7616);
 }
 
+@media only screen and (max-width: 400px) {
+    #phone {
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: 0px !important;
+    }
+    #header {
+        display: none;
+    }
+}
+
 #phone {
     height: 570px;
     width: 300px;
     background: #fbfbfb;
     border-radius: 20px;
     box-shadow: 3px;
-    /* border: 1px solid rgba(232, 232, 232, 0.712); */
     box-shadow: 6px 6px 12px #7676764f, -6px -6px 12px #7676764f;
 }
-
-
-/* @keyframes example {
-    0% {
-        top: 30px;
-    }
-    50% {
-        top: 50px;
-    }
-    100% {
-        top: 60px;
-    }
-} */
 
 .done {
     border: 50px solid red !important;
@@ -53,18 +50,10 @@ body {
     width: 100px;
     height: 100px;
     background: linear-gradient(243deg, #fd7616, #fd4949);
-    /* transition-property: width; */
-    /* transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s; */
 }
 
 .transprnet {
     background: linear-gradient(243deg, #fd7616, #fd4949);
-    /* left: 19px;
-    top: 3px; */
-    position: relative;
-    /* margin-left: 5px; */
     width: 0px;
     height: 0px;
 }

@@ -1,6 +1,5 @@
 var checkbox = document.getElementById("input");
 
-
 function check() {
     if (checkbox.checked == false) {
         document.body.style.background = "#fdfdfd ";
@@ -14,15 +13,11 @@ function check() {
         document.getElementById("p-p").style.color = "#14141a ";
         document.getElementById("circle").style.background = "linear-gradient(243deg, #fd7616, #fd4949) ";
         document.getElementById("sun").style.left = "0px";
-
-
         document.getElementById("phone").style.boxShadow = "6px 6px 12px #7676764f, -6px -6px 12px #7676764f";
-
         document.getElementById("moon").style.background = " linear-gradient(243deg, #fd7616, #fd4949)";
         document.getElementById("sun").style.background = " linear-gradient(243deg, #fd7616, #fd4949)";
         document.getElementById("header").style.color = "#222 ";
         document.getElementById("header").style.opacity = "30%";
-
 
     }
     if (checkbox.checked == true) {
@@ -35,21 +30,16 @@ function check() {
         document.getElementById("dark").style.color = "#b2afb6 ";
         document.getElementById("p-h").style.color = "#d6d4d9 ";
         document.getElementById("p-p").style.color = "#d6d4d9 ";
-
-
-
         document.getElementById("header").style.color = "#fff ";
         document.getElementById("sun").style.left = "0px";
         document.getElementById("phone").style.boxShadow = "-2px 6px 12px #2b292975, -2px -6px 12px #2b292975";
-
         document.getElementById("moon").style.background = "linear-gradient(45deg, rgb(129, 110, 253), rgb(133, 178, 253))";
         document.getElementById("circle").style.background = "linear-gradient(45deg, #816efd, #85b2fd) ";
 
 
-
         animte_moon();
     }
-
+    //  //  //  //  //  //  //  //  //  //  //  Animation for circle
     function anmite() {
         let pos = 40;
         const id = setInterval(fram, 3);
@@ -60,13 +50,18 @@ function check() {
             } else {
                 pos++;
                 document.getElementById("circle").style.opacity = pos + "%";
+                document.body.style.opacity = pos + "%";
+
+
             }
         }
     }
+    anmite();
 
+    /////////////////////////////////////////v/ Animation for cheange moon to sun
     function animte_moon() {
 
-        const time = setInterval(fram_moon, 6);
+        const time = setInterval(fram_moon, 5);
         let size_moon = 20;
         let size_sun = 70;
 
@@ -101,7 +96,6 @@ function check() {
         }
     }
 
-    anmite();
 }
 
 check();
